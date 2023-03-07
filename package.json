@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch ./src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
     "lint": "eslint src -e .ts --fix"
   },
   "keywords": [],
@@ -19,6 +20,10 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "fastify": "^4.14.0"
+    "dotenv": "^16.0.3",
+    "fastify": "^4.14.0",
+    "knex": "^2.4.2",
+    "sqlite3": "^5.1.4",
+    "zod": "^3.21.0"
   }
 }
